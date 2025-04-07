@@ -1,0 +1,32 @@
+monica = []
+chandler = []
+ross = []
+joey = []
+phoebe = []
+rachel = []
+
+
+
+for episode in episode_analysis:
+    if episode['monica']:
+        number_of_lines_of_monica = episode['monica']
+        monica.append(number_of_lines_of_monica)
+    elif episode['chandler']:
+        number_of_lines_of_chandler = episode['chandler']
+        chandler.append(number_of_lines_of_chandler)
+    elif episode['ross']:
+        number_of_lines_of_ross = episode['ross']
+        ross.append(number_of_lines_of_ross)
+    elif episode['phoebe']:
+        number_of_lines_of_phoebe = episode['phoebe']
+        phoebe.append(number_of_lines_of_phoebe)
+    elif episode['rachel']:
+        number_of_lines_of_rachel = episode['rachel']
+        rachel.append(number_of_lines_of_rachel)
+    elif episode['joey']:
+        number_of_lines_of_joey = episode['joey']
+        joey.append(number_of_lines_of_joey)
+    else:
+        continue
+
+print(monica, chandler, ross, joey, phoebe, rachel)
